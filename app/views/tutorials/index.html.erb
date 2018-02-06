@@ -2,9 +2,10 @@
 
 <div>Search <%= text_field_tag 'search', '', data: {'js-search' => true} %></div>
 
-<ul>
+<ul class="click-buttons">
   <% @tutorials.each do |tutorial| %>
-   <li><%= tutorial.title %><%= link_to "Hide", "", class: 'hide', data: {'js-hide-link' => true} %></li>
+   <li><%= tutorial.title %><%= link_to "Hide", "", class: 'hide', data: {'js-hide-link' => true} %> </li>
+    <li><%= link_to "Show", "", class: 'show', data:{'js-show-link' => true} %></li>
   <% end %>
 </ul>
 

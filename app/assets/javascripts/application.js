@@ -27,6 +27,10 @@ $(document).ready(function () {
     $('#search').change(function (event) {
         search_term = $(this).val();
         alert("You are searching for " + search_term);
-        
-    })
+    });
+    $('.show').click(function (event) {
+        $(this).parents('li').fadeIn(2000);
+        event.preventDefault();
+
+    });
 });
